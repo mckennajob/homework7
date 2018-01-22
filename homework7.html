@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Train Homework</title>
+  <link rel="stylesheet" href="homework7.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Train Tracker -->
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background-color: black; color: white">
+      <h1 class="text-center">Train Times</h1>
+      <h3 class="text-center">All Aboard!!!!</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <!-- Train Times List-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Train Times</strong></h3>
+          </div>
+          <div class="panel-body">
+            <table class="table table-hover" id='train-times-table'>
+              <thead>
+                <tr>
+                  <th>Train Name</th>
+                  <th>Destination</th>
+                  <th>Start Date</th>
+                  <th>Frequency</th>
+                  <th>Next Arrival</th>
+                  <th>Minutes Away</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Add Train Info  -->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Add Train Info</strong></h3>
+          </div>
+          <div class="panel-body">
+
+            <!-- Entry Form -->
+            <form>
+              <div class="form-group">
+                <label for="employee-name-input">Train Name</label>
+                <input class="form-control" id="train-name-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="role-input">Destination</label>
+                <input class="form-control" id="destination-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="start-input">First Train Time (military time)</label>
+                <input class="form-control" id="first-time-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="rate-input">Frequency</label>
+                <input class="form-control" id="frequency-input" type="text">
+              </div>
+              <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/JavaScript" src="homework7.js"></script>
+
+
+</body>
+</html>
